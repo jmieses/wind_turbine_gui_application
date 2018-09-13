@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/files">
+        <file>test/.DS_Store</file>
+        <file>test/a170503.csv</file>
+        <file>test/a170504.csv</file>
+        <file>test/a170505.csv</file>
+        <file>test/a170506.csv</file>
+    </qresource>
+</RCC>
