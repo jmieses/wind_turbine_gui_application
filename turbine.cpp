@@ -29,9 +29,12 @@ const double Turbine::getRotorRadius() const{
     return rotor_radius;
 }
 
-const double Turbine::TurbinePower() const {
+const double Turbine::TurbinePower() {
     // Power = 0.5*density*Cp*pi*R^2*U^3
-
+    for(int i = 0; i < this->wind->windX.size(); i++)
+    {
+        powerY.push_back(0.5*AIR_DENSITY*power_coefficient*PI*pow(rotor_radius, 2)*pow(this->wind->windX.at(i), 3));
+    }
     return 0.5*AIR_DENSITY*power_coefficient*PI*pow(rotor_radius, 2)*pow(this->wind->getWindSpeed(), 3);
 }
 

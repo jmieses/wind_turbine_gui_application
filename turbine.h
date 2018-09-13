@@ -17,6 +17,7 @@ private:
 
 public:
     WindSpeed* wind; // avoid error c2280
+    QVector<double> powerY; // vector for graphics
 
     Turbine();
     Turbine(double, double);
@@ -24,7 +25,7 @@ public:
     void setRotorRadius(double);
     void setWindProperties(WindSpeed);
     const double getRotorRadius() const;
-    const double TurbinePower() const;
+    const double TurbinePower();
 
     WindSpeed getWindProperties();
     ~Turbine();

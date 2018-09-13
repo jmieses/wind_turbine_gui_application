@@ -13,6 +13,8 @@ private:
 public:
 
     Read* read; // avoid error c2280
+    QVector<double> windX;
+    QVector<double> windY;
 
     WindSpeed();
     WindSpeed(double, double);

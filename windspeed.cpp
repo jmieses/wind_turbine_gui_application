@@ -54,6 +54,7 @@ void WindSpeed::averageWind(QString first_date_time, QString last_date_time){
     double sum = 0;
     for (int i = first; i <= last; i++){
         sum += this->read->getData1().at(i);
+        windX.push_back(this->read->getData1().at(i));
     }
     average_wind_speed = sum / abs((double)last - (double)first);
 }

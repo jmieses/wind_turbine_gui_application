@@ -23,7 +23,6 @@ protected:
 
 public:
 
-
     Read();
     Read(QString file);
     //Read(const Read&);
